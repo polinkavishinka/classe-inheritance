@@ -24,6 +24,7 @@ export default class Character {
             this.name = name;
         }
     }
-
+   
 }
+
 

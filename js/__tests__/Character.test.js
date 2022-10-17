@@ -1,9 +1,7 @@
 
 import Character from "../Character";
 test ('Создание нового персонажа,ошибок нет',()=>{
-
     const person = new Character ('Вася', 'Magician');
-
     const result ={
         name: 'Вася',
         type: 'Magician',
@@ -13,8 +11,6 @@ test ('Создание нового персонажа,ошибок нет',()=
     };
     expect(person).toMatchObject(result);  
 });
-
-
 
 test ('Имя от 2 до 10 включительно символов ',()=>{
     const person =  new Character ('Вася','Magician');
@@ -43,3 +39,4 @@ test ('Данный тип отсутсвует ',()=>{
     expect(person).toThrowError(new Error('такого класса нет'));
     
 });
+
